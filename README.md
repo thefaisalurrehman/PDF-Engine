@@ -1,5 +1,11 @@
 # PDF Engine
 
+[![JitPack](https://jitpack.io/v/thefaisalurrehman/PDF-Engine.svg)](https://jitpack.io/#thefaisalurrehman/PDF-Engine)
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
+![Min API](https://img.shields.io/badge/API-26%2B-brightgreen.svg)
+![Kotlin](https://img.shields.io/badge/Kotlin-100%25-7F52FF.svg?logo=kotlin&logoColor=white)
+![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-ready-4285F4.svg?logo=jetpackcompose&logoColor=white)
+
 A lightweight, **100% Kotlin** PDF rendering library for Android with a first-class
 **Jetpack Compose** API. Drop a `PdfViewer(...)` composable into your app and get
 pinch-to-zoom, smooth scrolling, page-by-page mode, dark mode, and a draggable scroll
@@ -88,9 +94,13 @@ dependencyResolutionManagement {
 
 ```kotlin
 dependencies {
-    implementation("com.github.thefaisalurrehman:PDF-Engine:1.0.0") // JitPack coordinate
+    // Multi-module repo → group is com.github.<user>.<repo>, artifact is the module name.
+    implementation("com.github.thefaisalurrehman.PDF-Engine:pdfengine:1.0.0")
 }
 ```
+
+> The exact coordinate is shown on your library's JitPack page after the first build
+> (https://jitpack.io/#thefaisalurrehman/PDF-Engine).
 
 ### Option B — local Maven / source
 
@@ -229,6 +239,12 @@ The `:app` module is a minimal, intentionally-thin example of integrating the SD
 ./gradlew :app:assembleDebug          # build the demo
 ./gradlew :pdfengine:assembleRelease  # build the SDK (.aar)
 ```
+
+---
+
+## Changelog
+
+See [`CHANGELOG.md`](CHANGELOG.md) for the full version history. Latest: **1.0.0**.
 
 ---
 

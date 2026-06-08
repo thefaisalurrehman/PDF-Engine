@@ -1,0 +1,7 @@
+# JitPack build configuration — https://jitpack.io
+# The Android Gradle Plugin and compileSdk 36 require JDK 17.
+jdk:
+  - openjdk17
+# Only the library module is published (the :app demo is not a library).
+install:
+  - ./gradlew :pdfengine:publishToMavenLocal
