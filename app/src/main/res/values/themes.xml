@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.PDFCore" parent="android:Theme.Material.Light.NoActionBar" />
+
+    <style name="Theme.PDFCore.Fullscreen" parent="Theme.PDFCore">
+        <item name="android:actionBarStyle">@style/Widget.Theme.PDFCore.ActionBar.Fullscreen</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,11 @@
+<resources>
+
+    <style name="Widget.Theme.PDFCore.ActionBar.Fullscreen" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black</item>
+    </style>
+
+    <style name="Widget.Theme.PDFCore.Fullscreen.ActionBar.Fullscreen" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+</resources>

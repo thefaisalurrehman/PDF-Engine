@@ -1,0 +1,36 @@
+PDF Engine
+Copyright (c) 2026 Faisal
+
+This product is an Android PDF rendering library written in Kotlin.
+
+-------------------------------------------------------------------------------
+Third-party attributions
+-------------------------------------------------------------------------------
+
+This project is derived from, and includes substantial portions of, the
+following Apache License 2.0 works. The Kotlin rewrite, the migration from
+AsyncTask/Thread to Kotlin coroutines, the Jetpack Compose API, the merged
+single-module packaging and all subsequent modifications are the work of the
+PDF Engine author.
+
+1. AndroidPdfViewer
+   Copyright 2016-2017 Bartosz Schiller (https://github.com/barteksc/AndroidPdfViewer)
+   Licensed under the Apache License, Version 2.0.
+   The view engine in `com.faisal.pdfengine` (PDFView, page tiling, caching,
+   gesture handling, scroll handle, fit policies, etc.) originates from this
+   project and has been ported to Kotlin and modernized.
+
+2. PdfiumAndroid
+   Copyright Bartosz Schiller (https://github.com/barteksc/PdfiumAndroid)
+   Licensed under the Apache License, Version 2.0.
+   The native PDFium bindings in `com.shockwave.pdfium` (PdfiumCore,
+   PdfDocument, Size/SizeF and the bundled native `.so` libraries) originate
+   from this project. The package name `com.shockwave.pdfium` is retained
+   because the prebuilt native libraries resolve JNI symbols by that exact
+   class path.
+
+PDFium itself is an open-source project by Google / the Chromium authors,
+licensed under the 3-clause BSD license.
+
+A copy of the Apache License, Version 2.0 is provided in the LICENSE file and
+at http://www.apache.org/licenses/LICENSE-2.0
